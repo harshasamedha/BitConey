@@ -1,0 +1,13 @@
+stages:
+  - test
+
+hardhat-test:
+  stage: test
+  image: node:16
+  tags:
+    - k8s
+  variables:
+    MORALIS_ID: $MORALIS_ID_DEV
+  script:
+    - cd contracts
+    - yarn test:cicd
