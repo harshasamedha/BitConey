@@ -10,7 +10,7 @@ describe('Token', () => {
     const { token } = await useContracts()
     const [deployer] = await ethers.getSigners()
     expect(await token.balanceOf(deployer.address)).eq(
-      BigNumber.from('21000000').mul('100000000')
+      BigNumber.from('21000000').mul(BigNumber.from(10).pow(8))
     )
   })
   it('should be correct decimals', async () => {
