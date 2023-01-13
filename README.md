@@ -122,8 +122,6 @@ $ yarn verify --network bsc_mainnet
 - **Supported Chain**: `BNB Chain`
 - **Decimal number**: `8`
 
-[Tokenomics](./Cookies%20Tokenomics.pdf)
-
 ## Project Overview
 
 Bitconey Token is a simple ERC20 token with static supply.
